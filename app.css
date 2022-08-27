@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.firstName {
+    margin-bottom: 40px;
+}
+
+.lastName {
+    margin-bottom: 40px;
+}
+
+#firstname,
+#lastname,
+#email {
+    width: 100%;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 40px;
+
+}
+
+.radioBottom {
+    margin-bottom: 40px;
+}
+
+span {
+    display: block;
+    overflow: hidden;
+    padding-right: 10px;
+}

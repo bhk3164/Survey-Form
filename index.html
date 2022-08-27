@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Chess Tournament Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Tournament Chess Signup</h1>
+    <form action="/register">
+
+        <div class="firstName">
+            <label for="firstname">First Name:</label>
+            <span><input type="text" name="firstname" id="firstname" required></span>
+        </div>
+        <div class="lastName">
+            <label for="lastname">Last Name:</label>
+            <span></span><input type="text" name="lastname" id="lastname" required></span>
+        </div>
+        <div class="email">
+            <label for="email">Email:</label>
+            <span><input type="email" name="email" id="email"></span>
+        </div>
+
+        <p>Select a Rating Group: </p>
+        <div>
+            <input type="radio" name="ratingGroup" value="1600U" id="1600U">
+            <label for="1600U">1600U</label>
+        </div>
+        <div>
+            <input type="radio" name="ratingGroup" value="1800U" id="1800U">
+            <label for="1800U">1800U</label>
+        </div>
+        <div>
+            <input type="radio" name="ratingGroup" value="2000U" id="2000U">
+            <label for="2000U">2000U</label>
+        </div>
+        <div class="radioBottom">
+            <input type="radio" name="ratingGroup" value="2200+" id="2200+">
+            <label for="2200+">2200+</label>
+        </div>
+
+        <label for="days">Select Day Group</label>
+        <select name="days" id="days" required>
+            <option name="2day" value="2day">8/27-8/28</option>
+            <option name="3day" value="3day">8/27-8/29</option>
+            <option name="4day" value="4day">8/27-8/30</option>
+        </select>
+
+
+
+        <div>
+            <label for="cardnumber" required>Card Number</label>
+            <input type="number" id="cardnumber">
+            <label for="cvv" required>CVV</label>
+            <input type="number" id="cvv">
+            <label for="doe" required>Expiration Date</label>
+            <input type="text" id="doe">
+            <label for="address" required>Address</label>
+            <input type="text" id="address">
+        </div>
+
+        <button>Sign Up!</button>
+
+    </form>
+
+</body>
+
+</html>
