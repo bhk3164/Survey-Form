@@ -2,15 +2,43 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Serif Pro', serif;
+    background-color: #ffafcc;
+
 }
 
-.firstName {
+h1 {
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+
+.head {
+    margin-top: 0;
+    display: flex;
+    border: 5px solid #bde0fe;
+    border-radius: 20px;
+    width: 500px;
     margin-bottom: 40px;
 }
 
-.lastName {
+.logo {
+    margin-top: 25px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.firstName,
+.lastName,
+.email {
     margin-bottom: 40px;
 }
+
+.border1 {
+    background-color: #a2d2ff;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
 
 #firstname,
 #lastname,
@@ -19,10 +47,17 @@ body {
 }
 
 p {
-    margin-bottom: 0;
-    margin-top: 40px;
-
+    margin-bottom: 20px;
+    background-color: #a2d2ff;
+    color: #FFFFFF;
+    width: 160px;
 }
+
+.radioLabel {
+    background-color: #cdb4db;
+    color: #FFFFFF;
+}
+
 
 .radioBottom {
     margin-bottom: 40px;
@@ -32,4 +67,28 @@ span {
     display: block;
     overflow: hidden;
     padding-right: 10px;
+}
+
+.dayGroups {
+    margin-bottom: 40px;
+}
+
+.dayGroup {
+    background-color: #a2d2ff;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.cardInfo {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #a2d2ff;
+    color: #ffffff;
+    border-color: #bde0fe;
+}
+
+input:hover {
+    background-color: #cdb4db;
 }

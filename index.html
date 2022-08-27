@@ -11,57 +11,62 @@
 </head>
 
 <body>
-    <h1>Tournament Chess Signup</h1>
+    <div class="head">
+        <img class="logo" src="knight.png" alt="Knight Logo">
+        <h1>Chess Tournament Signup</h1>
+        <img class="logo" src="knight.png" alt="Knight Logo">
+    </div>
     <form action="/register">
 
         <div class="firstName">
-            <label for="firstname">First Name:</label>
+            <label class="border1" for="firstname">First Name:</label>
             <span><input type="text" name="firstname" id="firstname" required></span>
         </div>
         <div class="lastName">
-            <label for="lastname">Last Name:</label>
+            <label class="border1" for="lastname">Last Name:</label>
             <span></span><input type="text" name="lastname" id="lastname" required></span>
         </div>
         <div class="email">
-            <label for="email">Email:</label>
+            <label class="border1" for="email">Email:</label>
             <span><input type="email" name="email" id="email"></span>
         </div>
 
         <p>Select a Rating Group: </p>
         <div>
-            <input type="radio" name="ratingGroup" value="1600U" id="1600U">
-            <label for="1600U">1600U</label>
+            <input class="radios" type="radio" name="ratingGroup" value="1600U" id="1600U">
+            <label class="radioLabel" for="1600U">1600U</label>
         </div>
         <div>
-            <input type="radio" name="ratingGroup" value="1800U" id="1800U">
-            <label for="1800U">1800U</label>
+            <input class="radios" type="radio" name="ratingGroup" value="1800U" id="1800U">
+            <label class="radioLabel" for="1800U">1800U</label>
         </div>
         <div>
-            <input type="radio" name="ratingGroup" value="2000U" id="2000U">
-            <label for="2000U">2000U</label>
+            <input class="radios" type="radio" name="ratingGroup" value="2000U" id="2000U">
+            <label class="radioLabel" for="2000U">2000U</label>
         </div>
         <div class="radioBottom">
             <input type="radio" name="ratingGroup" value="2200+" id="2200+">
-            <label for="2200+">2200+</label>
+            <label class="radioLabel" for="2200+">2200+</label>
         </div>
 
-        <label for="days">Select Day Group</label>
-        <select name="days" id="days" required>
-            <option name="2day" value="2day">8/27-8/28</option>
-            <option name="3day" value="3day">8/27-8/29</option>
-            <option name="4day" value="4day">8/27-8/30</option>
-        </select>
+        <div class="dayGroups">
+            <label class="dayGroup" for="days">Select Day Group:</label>
+            <select name="days" id="days" required>
+                <option name="2day" value="2day">8/27-8/28</option>
+                <option name="3day" value="3day">8/27-8/29</option>
+                <option name="4day" value="4day">8/27-8/30</option>
+            </select>
+        </div>
 
 
-
-        <div>
-            <label for="cardnumber" required>Card Number</label>
-            <input type="number" id="cardnumber">
-            <label for="cvv" required>CVV</label>
+        <div class="cardInfo">
+            <label class="dayGroup" for="cardnumber" required>Card Number:</label>
+            <input type="text" id="cardnumber">
+            <label class="dayGroup" for="cvv" required>CVV:</label>
             <input type="number" id="cvv">
-            <label for="doe" required>Expiration Date</label>
+            <label class="dayGroup" for="doe" required>Expiration Date:</label>
             <input type="text" id="doe">
-            <label for="address" required>Address</label>
+            <label class="dayGroup" for="address" required>Address:</label>
             <input type="text" id="address">
         </div>
 
